@@ -13,7 +13,9 @@ import numpy as np
 # Propósito: Introduzir não-linearidade no modelo. Sem funções de ativação, uma rede neural composta de várias 
 # camadas lineares equivaleria a uma única camada linear, limitando sua capacidade de resolver problemas complexos.
 def step_function(x):
-    return 1 if x > 0 else 0
+    return 1 if x > 0 else 0 # Original do slide
+    # return 1 if x >= 0.5 else 0 # Porta OR
+    # return 1 if x >= 1 else 0 # Porta AND 
 
 # Perceptron (neuronio aritificial)
 # Essa função representa um neurônio artificial básico chamado perceptron.
